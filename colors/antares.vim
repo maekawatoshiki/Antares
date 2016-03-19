@@ -18,7 +18,7 @@ let s:peach            = "cca68e"
 let s:green            = "00b853"
 let s:aqua             = "4ae5e8"
 let s:olive            = "afaf4f"
-let s:blue             = "7fc6f0"
+let s:blue             = "009d87"
 let s:lightblue        = "90d0f0"
 let s:purple           = "CF9FFA"
 let s:window           = "151515"
@@ -42,7 +42,9 @@ set background=dark
 hi clear
 syntax reset
 
+
 let g:colors_name = "antares"
+
 
 if has("gui_running") || &t_Co == 88 || &t_Co == 256
   " Returns an approximate grey index for the given grey level
@@ -376,7 +378,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("cInclude", s:red, "", "")
   call <SID>X("cDelimiter",s:blue, "", "")
   call <SID>X("cOperator",s:aqua, "", "")
-  call <SID>X("cFunction", s:foreground, "", "")
+  call <SID>X("cFunction", s:blue, "", "")
   call <SID>X("cCustomParen", s:foreground, "", "")
   call <SID>X("cOctalZero", s:purple, "", "bold")
 
